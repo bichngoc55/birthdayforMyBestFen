@@ -9,50 +9,56 @@ import {
 import { motion } from "framer-motion";
 import ReactPlayer from "react-player";
 import quy from "./assets/quy.jpg";
+import ngoloi from "./assets/ngoloi.png";
+import duongduong from "./assets/duongduong.webp";
+import huaquanghan from "./assets/huaquanghan.webp";
+import chanyeol from "./assets/chanyeol.jpg";
+import who from "./assets/who.jpeg";
 const quotesData = {
   happiness: [
-    "Joy is the simplest form of gratitude.",
-    "Happiness is not something ready-made. It comes from your own actions.",
-    "The greatest happiness of life is the conviction that we are loved.",
-    "For every minute you are angry you lose sixty seconds of happiness.",
-    "Happiness is a warm puppy.",
-    "The secret of happiness is freedom, the secret of freedom is courage.",
-    "Count your age by friends, not years. Count your life by smiles, not tears.",
-    "The most important thing is to enjoy your life—to be happy—it's all that matters.",
-    "Happiness is not a destination, it's a journey.",
-    "The purpose of our lives is to be happy.",
-    "Happiness is the best makeup.",
-    "Happy people plan actions, they don't plan results.",
-    "The happiness of your life depends upon the quality of your thoughts.",
-    "Happiness is not something you postpone for the future.",
-    "The only joy in the world is to begin.",
-    "Happiness is having a large, loving, caring, close-knit family in another city.",
-    "The greatest happiness is to scatter your enemy and drive him before you.",
-    "Happiness is a choice that requires effort at times.",
-    "The key to being happy is knowing you have the power to choose what to accept.",
-    "Happiness is a state of mind. It's just according to the way you look at things.",
+    "Ohh Có chuyện gì vui z bạn? Kể t nghe với. Hihi",
+    "Im happy that u clicked on this emotion.",
+    "T mong một trong những hạnh phúc trong cuộc sống của m là niềm tin m được yêu thương.",
+    "Mỗi phút m tức giận là m mất đi sáu mươi giây hạnh phúc. Hihi, không biết ns gì cả.",
+    "BLEBLEBLE!!!",
+    "Hạnh phúc thì cố kiếm tiền đi Mông Cổ thuiiii",
+    "Đếm cuộc sống bằng những nụ cười, không phải nước mắt. Hihi",
+    "Điều gì làm bà cười z bà thơ?",
+    "Hạnh phúc không phải là một điểm đến, đó là một hành trình.",
+    "Mục đích của cuộc sống chúng ta là để hạnh phúc.",
+    "Woww!!! You should be happy more =)) cuz you are kind.",
+    "Chúng ta là lũ quỷ sống ở tận rừng xanh",
+    "Hình như trong lòng anh đã không còn hình bóng ai ngoài em đâu.",
+    "Chú khỉ vui có chuyện gì vui hay là vì hôm nay là người bth nên vui z?",
+    "Chị ấy là sự hoàn hảo tuyệt đối, là thành công của tạo hoá, là món quà duy nhất của Chúa, là thiên thần được gửi xuống thế gian thắp sáng cuộc đời của tôi, là kì quan vĩ đại nhất thế giới, là kiệt tác để đời của thần linh.",
+    "Hạnh phúc là có một gia đình lớn, yêu thương, quan tâm, gắn bó ở một thành phố khác. Và có đôi ta ở Mông Cổ 1 ngày nào đó.",
+    "Mong m có thể gặp được 1 người bạn trai yêu thương m hơn cả t yêu thương m rất nhiều. Hihi, happy days my fen",
+    "Lalalala!!!! Share your happiness ưith me bro.",
+    "Ai đọc được dòng này là đom đóm.",
+    "Mẹ lao công học yêu đang vui.",
   ],
+
   sadness: [
-    "Even the darkest night will end and the sun will rise.",
-    "Behind every cloud is another cloud.",
-    "Tears come from the heart and not from the brain.",
-    "The good life is not one immune to sadness.",
-    "Sadness flies away on the wings of time.",
-    "Sadness is but a wall between two gardens.",
-    "The walls we build around us to keep sadness out also keeps out the joy.",
-    "Some days are just bad days, that's all.",
-    "Every human walks around with a certain kind of sadness.",
-    "The word 'happy' would lose its meaning if it were not balanced by sadness.",
+    "Ohh nooo!!! Bạn Quý của t có chuyện gì buồn z? Khóc đi bạn r kể với t henn!! You are not alone.",
+    "I wish i could be next to you right now and give you a hug. We can all be quiet and gaze at the stars.",
+    "Nhắn tin cho tôi ngay lập tức!!! Sao lại mò vào đây xem quote mà không nhắn tin tâm sự với tôi?",
+    "Hi big you! Its me, mini you. How are you? I really miss you. Is everything okay lately? I belive everyhing is going GREAT. Cuz big me always DO THE BEST",
+    "When you die, who will sit at your grave the longest?",
+    "Cuối cùng em vẫn chọn khóc chứ không chọn nói ra.",
+    "Đến một lúc nào đó Quý nhận ra rằng cho dù quý có tổn thương hay đau lòng đến mức oà khóc trong vô vọng thì cũng chỉ có bản thân Quý mới an ủi được chính mình.",
+    "Hey whats wrong? Do you wanna talk about it? Or you want me to keep silent?",
+    "...Không biết nói gì ngoài chúc quý mau ổn nhé. Ồn lòi lìa !! Đi ngủ thì sẽ không buồn nữa",
+    "The word 'happy' would lose its meaning if it were not balanced by sadness. Buồn lắm hả b :(( ",
     "Sadness gives depth. Happiness gives height.",
-    "Life is sad. Everything ends.",
-    "First, accept sadness. Realize that without losing, winning isn't so great.",
-    "Our sweetest songs are those that tell of saddest thought.",
-    "The longer and more carefully we look at a funny story, the sadder it becomes.",
-    "Experiencing sadness and anger can make you feel more creative.",
-    "Every person has a secret sorrow which the world knows not.",
-    "The heart will break, but broken live on.",
-    "There are moments when I wish I could roll back the clock.",
-    "Some people are just not meant to be in our lives forever.",
+    "Đừng tiêu cực. Xem phim nhá?? Lets go to google meet and we can watch films together",
+    "Có chuyện gì z? Are you okk? Do you wanna talk about it? Think about mongolian and snow and taking wonderful pictures of us together. Do you feel better now?",
+    "Những bài hát ngọt ngào nhất là những bài kể về suy nghĩ buồn nhất.",
+    "HUHUHUHU, bạn buồn tui cũng không vui. Bạn vui thì tui mới vui được. Nhưng mà cứ khóc đi nếu có thể and accept your emotions nhé.",
+    "BLEBLEBLEBLE! Sao z cô pé ngok ngeck của anh. Em bùn z sao không đặt chân gà sốt thái + cháo sườn về ăn?",
+    "Mỗi người đều có một nỗi buồn thầm kín mà thế giới không hề hay biết. Mong Quý có thể tha thứ cho họ và cũng như là tha thứ cho chính mình.",
+    "Trái tim sẽ tan vỡ, nhưng vết thương sẽ tiếp tục sống. Mong Quý có thể có ít vết thương nhất để còn có chỗ để trái tim biết yêu thương nhìuuuu",
+    "Có những khoảnh khắc ước có thể quay ngược thời gian. Yee you can. But within your minds only. Leave it behind and forgive yourself!",
+    "Có những người đơn giản không phải ở trong cuộc đời chúng ta mãi mãi. Let them be where they should be.",
   ],
   awkward: [
     "Life is full of awkward moments, embrace them!",
@@ -77,26 +83,26 @@ const quotesData = {
     "Embrace the awkward, it's what makes you real.",
   ],
   depressed: [
-    "Even the darkest hour has only 60 minutes.",
-    "You are stronger than you know.",
-    "This too shall pass.",
-    "Every storm runs out of rain.",
-    "The sun will rise and we will try again.",
-    "Your present situation is not your final destination.",
-    "Life doesn't get easier, you just get stronger.",
-    "Sometimes the bad things that happen in our lives put us directly on the path to the best things.",
-    "Rock bottom became the solid foundation on which I rebuilt my life.",
-    "Hope is a powerful thing. Some say it's a different breed of magic altogether.",
-    "What seems to us as bitter trials are often blessings in disguise.",
-    "The only way out is through.",
-    "You are not alone in this journey.",
-    "Small steps are still progress.",
-    "Your story isn't over yet.",
-    "Sometimes we need the dark to see the stars.",
-    "You have survived 100% of your worst days.",
-    "Recovery is not one and done. It happens in bits and pieces.",
-    "The comeback is always stronger than the setback.",
-    "Every day is a new beginning.",
+    "Quý không cô đơn đâu, tao luôn ở đây bên Quý mà.",
+    "Không sao cả nếu hôm nay Quý chỉ muốn nghỉ ngơi, tao cho phép Quý làm z. Còn người khác thì không :((",
+    "Quý không cần phải hoàn hảo, Quý luôn là người very tuyệt vời trong mắt tao. Hài hước xinh đẹp tốt bụng, im always proud to tell others u r my friend",
+    "Quý không cần phải giả vờ là mình ổn, hãy cứ sống thật với cảm xúc của Quý.",
+    "Hãy để thời gian chữa lành, Quý sẽ thấy bản thân mạnh mẽ hơn.",
+    "Quý đang đi đúng hướng, kể cả không đúng hoặc m không biết làm gì tiếp thì tao sẽ là người luôn đồng hành cùng m nên cứ sống qua hôm nay đạ.",
+    "Quý không cô đơn đâu. Có thể tao không hiểu chính xác cảm xúc của Quý nhưng tao vẫn ở bên Quý.",
+    "Tao rất tiếc vì Quý đang phải trải qua điều này. Hãy nhớ là tao luôn ở đây khi Quý cần.",
+    "Quý xứng đáng có được hạnh phúc. Nhiều hơn những gì t có thể làm cho m bây giờ. Sau này t mong qua mỗi năm ta lại có thể mở lòng với nhau hơn và biết yêu thương cuộc sống hơn.",
+    "M thử viết ra cảm xúc của mình, đôi khi hn sẽ làm m nhẹ nhõm hơn.",
+    "Đừng quên chăm sóc bản thân , ngay cả khi m cảm thấy không muốn.",
+    "M là ánh sáng trong cuộc sống của những người xung quanh Quý. Không có m thì h t đã rất tự ti và mặc cảm về bản thân. Thanks for always there and supporting me mentally",
+    "Quý không cần phải đối diện với thế giới khi Quý chưa sẵn sàng.",
+    "Không ai là hoàn hảo cả, và Z là hoàn toàn bình thường.",
+    "Biết nói gì h. Haizz mệt quá thì ngủ đi bạn, kệ mẹ hn. Nhưng mà t biết m sẽ không kệ được nên cố lên nha.",
+    "M bùn lắm hả? Haiz !!! Nếu đã chọn vào emotion này thì chắc cảm xúc đã được tích tụ lâu r. M phải chịu đựng và vất vả nhiều r. Cố lết qua khoảng thời gian ni thôi b.",
+    "Hãy để tao giúp Quý gánh nỗi buồn này một chút.",
+    "Tao rất tự hào về Quý, dù Quý không nhận ra điều đó.",
+    "Quý xứng đáng có được hạnh phúc.",
+    "Cố gắng lết qua khoảng thời gian ni đi bạn. Rồi ta sẽ ở mông cổ và khóc cùng nhau!!!",
   ],
   normal: [
     "Life is what happens while you're busy making other plans.",
@@ -146,7 +152,7 @@ const quotesData = {
 
 const styles = {
   container: {
-    width: "100%",
+    // width: "100%",
     minHeight: "100vh",
     background: "linear-gradient(to bottom, #f3e7ff, #ffe7f3)",
     padding: "2rem",
@@ -157,6 +163,47 @@ const styles = {
     textAlign: "center",
     marginBottom: "3rem",
     color: "#553c9a",
+  },
+  imageContainer: {
+    position: "relative",
+    width: "100%",
+    maxWidth: "600px",
+    height: "400px",
+    margin: "0 auto 48px auto",
+  },
+  heartContainer: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    width: "200px",
+    height: "200px",
+  },
+  heartImage: {
+    width: "100%",
+    height: "100%",
+    position: "relative",
+    mask: `
+      radial-gradient(circle at 70% 31%, #000 29%, transparent 30%) top left,
+      radial-gradient(circle at 30% 31%, #000 29%, transparent 30%) top right,
+      linear-gradient(to bottom, #000 50%, transparent 50%)
+    `,
+    maskComposite: "add",
+    WebkitMaskComposite: "add",
+    overflow: "hidden",
+  },
+
+  circleImage: {
+    position: "absolute",
+    width: "100px",
+    height: "100px",
+    borderRadius: "50%",
+    overflow: "hidden",
+  },
+  image: {
+    width: "100%",
+    height: "100%",
+    objectFit: "cover",
   },
   bottleGrid: {
     display: "grid",
@@ -788,7 +835,13 @@ const Home = () => {
           shy: 0,
         };
   });
-
+  const surroundingImages = [
+    { src: ngoloi, angle: 0 },
+    { src: duongduong, angle: 72 },
+    { src: huaquanghan, angle: 144 },
+    { src: chanyeol, angle: 216 },
+    { src: who, angle: 288 },
+  ];
   const getBottleColor = (emotion) => {
     const colors = {
       happiness: "#FCD34D",
@@ -821,9 +874,30 @@ const Home = () => {
           height: "300px",
           borderRadius: "400px",
           display: "block",
-          margin: "10 auto",
+          margin: "0 auto",
         }}
       />
+      {/* <div style={styles.imageContainer}>
+        <div style={styles.heartContainer}>
+          <div style={styles.heartImage}>
+            <img src={quy} alt="Quy" />
+          </div>
+        </div>
+
+        {surroundingImages.map((img, index) => (
+          <motion.div
+            key={index}
+            style={{
+              ...styles.circleImage,
+              left: `${Math.cos((img.angle * Math.PI) / 180) * 150 + 250}px`,
+              top: `${Math.sin((img.angle * Math.PI) / 180) * 150 + 200}px`,
+            }}
+            whileHover={{ scale: 1.1 }}
+          >
+            <img src={img.src} alt="Surrounding" style={styles.image} />
+          </motion.div>
+        ))}
+      </div> */}
       <div style={styles.bottleGrid}>
         {Object.keys(bottleStates).map((emotion) => (
           <motion.div
@@ -880,7 +954,7 @@ const QuotesPage = () => {
             onMouseOver={(e) => (e.target.style.backgroundColor = "#6d28d9")}
             onMouseOut={(e) => (e.target.style.backgroundColor = "#7c3aed")}
           >
-            Choose Another Emotion
+            Chọn thẻ khác hông!!
           </motion.button>
         )}
       </motion.div>
